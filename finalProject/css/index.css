@@ -1,0 +1,134 @@
+﻿* {
+  box-sizing: border-box;
+}
+body {
+	font-family:"Bubblegum Sans", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	font-size:110%;
+}
+nav {
+	height:170px;
+	background:#08C6ED;
+    padding:10px;
+	border:5px solid white;
+	border-top: 2px solid white;
+}
+li {
+	list-style:none;
+	text-align:center;
+	width:22%;
+	margin: 10px;
+}
+.navBar {
+	float: left;
+}
+
+header{
+	margin-top:0%;
+	background:#393991;
+	padding:10px;
+	border:5px solid white;
+	border-bottom: 2px solid white;
+}
+h1{
+	color:white;
+    text-shadow:3px 3px gray;	
+    text-align:center;
+    font-size:3em;
+	font-family:"Bubblegum Sans",cursive;
+}
+h2{
+	color:#08C6ED;
+    text-shadow:1px 1px 1px black;	
+    text-align:center;
+	font-family:"Bubblegum Sans",cursive;	
+    font-size:2em;
+}
+h3{
+	color:#08C6ED;
+    text-shadow:1px 1px gray;	
+    text-align:center;
+	font-family:"Bubblegum Sans",cursive;	
+    font-size:2em;
+}
+img {
+	text-align: center;
+	border: 2px solid black;
+}
+img:hover{
+	transform:scale(1.02,1.02);
+	animation:rock .5s 1;
+}
+@keyframes rock{
+    0% {transform:rotate(0deg) scale(1.02,1.02)}
+    25% {transform:rotate(-5deg) scale(1.02,1.02)}
+    75% {transform:rotate(5deg) scale(1.02,1.02)}
+    100% {transform:rotate(0deg) scale(1.02,1.02)}
+}
+article{
+	margin: 80px;
+	margin-top: 20px;
+	background-color:#393991;
+	padding:5px;
+	border:5px solid white;
+}
+
+aside {
+    background: #08C6ED;
+    padding: 25px;
+    margin-top: 10px;
+	box-shadow:3px 3px #555;
+}
+footer {
+    color: black;
+    text-align: center;
+    padding: 15px;
+	width:100%;
+}
+
+.icon-bar a{
+	color: #6A6142;
+}
+.icon-bar a:hover{
+	color: turquoise;
+}
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+@media only screen and (max-width: 479px) {
+section{
+	display: grid;
+	padding:5px;
+	background-color: #CC0000;
+	margin: 20px;
+	border: 4px solid white;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+	'h3' 'h2' 'p' 'p';	
+}
+nav {
+padding: 10px
+}
+}
+
+@media only screen and (min-width:480px) {
+section{
+	display: grid;
+	padding:5px;
+	background-color: #CC0000;
+	margin: 20px;
+	border: 4px solid white;
+	grid-template-columns: 1fr 4fr;
+	grid-template-areas:
+	'h2 h3'
+	'p p';
+}
+}
